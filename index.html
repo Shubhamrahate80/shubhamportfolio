@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3682aef1fc.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <!-- home -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact Details</a></li>
+                </ul>
+            </nav>
+
+            <div class="header">
+                <h2>Hello,</h2>
+                <h1>I am Shubham Rahate</h1>
+                <p><b>Full-Stack Developer</b></p>
+            </div>
+
+            <!-- about-->
+
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <h1 class="subtitle">About Me</h1>
+                            <p class="about-content">
+                                Hello, I'm <b>Shubham Rahate</b>,Computer diploma graduate with a strong foundation in Angular framework and Java.
+                                Eager to embark on my professional journey, I've honed my skills in web development through hands-on experience and
+                                coursework. As a fresher, I bring a fresh perspective and enthusiasm for learning. I am passionate about programming
+                                and excited to apply my knowledge to real-world challenges. I am currently seeking opportunities to gain valuable
+                                experience and contribute to innovative projects in the dynamic field of Fullstack development. 
+                                
+                            </p>
+                        </div>
+                        <div class="about-col-2">
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="education">
+                                <ul>
+                                    <li><span>2021</span><br>Computer Diploma Graduate</li>
+                                    <li><span>2023</span><br>Java Course (RST Forum)</li>
+                                    <li><span>2024</span><br>Java Full Stack (RST Forum)</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="skills">
+                                <ul>
+                                    <li>
+                                        <span>Languages</span><br>
+                                        Java<br>
+                                        HTML&CSS <br>
+                                        TypeScript <br>
+                                        MySQL
+                                    </li><br>
+                                    <li>
+                                        <span>Framework</span><br>
+                                        SpringBoot <br>
+                                        Angular
+                                    </li><br>
+                                    <li>
+                                        <span>IDEs</span><br>
+                                        Visual Studio<br>
+                                        MySQL Workbench <br>
+                                        Eclipse <br>
+                                        IntelliJ <br>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Work</span><br>Fresher</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project">
+                <div class="container">
+                    <h1 class="subtitle">Project</h1>
+                    <div class="service-list">
+                        <div class="card">
+                            <img src="pwg.png" alt="Project 1">
+                            <div class="card-body">
+                                <h3>Project 1</h3>
+                                <p>It is a random password generator made using Angular framework.</p>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <img src="Typingmaster.PNG" alt="Project 2">
+                            <div class="card-body"><br><br>
+                                <h3>Project 2</h3>
+                                <p>It is a random Typing Master made using Angular framework.</p>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <img src="otp.PNG" alt="Project 3">
+                            <div class="card-body">
+                                <h3>Project 3</h3>
+                                <p>It is a random six digit OTP generator made using Angular framework</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>shubhamrahate23@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+91 9082389133</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div>
+            <a href="" download class="btn">Download Resume</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+            
+            
+            <script>
+                var tabLinks = document.getElementsByClassName("tab-links");
+                var tabContents = document.getElementsByClassName("tab-contents");
+                function opentab(tabName) {
+                    for (tabLink of tabLinks) {
+                        tabLink.classList.remove("active-link");
+                    }
+                    for (tabCon of tabContents) {
+                        tabCon.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link")
+                    document.getElementById(tabName).classList.add("active-tab");
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
